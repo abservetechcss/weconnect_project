@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="9" height="20" viewBox="0 0 9 20">
+  <g id="Group_18691" data-name="Group 18691" transform="translate(0.403 -0.178)" opacity="0.5">
+    <g id="Ellipse_18" data-name="Ellipse 18" transform="translate(-0.403 0.178)" fill="#1e1e1e" stroke="#1e1e1e" stroke-width="1">
+      <circle cx="1.5" cy="1.5" r="1.5" stroke="none"/>
+      <circle cx="1.5" cy="1.5" r="1" fill="none"/>
+    </g>
+    <g id="Ellipse_25" data-name="Ellipse 25" transform="translate(5.597 0.178)" fill="#1e1e1e" stroke="#1e1e1e" stroke-width="1">
+      <circle cx="1.5" cy="1.5" r="1.5" stroke="none"/>
+      <circle cx="1.5" cy="1.5" r="1" fill="none"/>
+    </g>
+    <g id="Ellipse_19" data-name="Ellipse 19" transform="translate(-0.403 6.178)" fill="#1e1e1e" stroke="#1e1e1e" stroke-width="1">
+      <ellipse cx="1.5" cy="1" rx="1.5" ry="1" stroke="none"/>
+      <ellipse cx="1.5" cy="1" rx="1" ry="0.5" fill="none"/>
+    </g>
+    <g id="Ellipse_24" data-name="Ellipse 24" transform="translate(5.597 6.178)" fill="#1e1e1e" stroke="#1e1e1e" stroke-width="1">
+      <ellipse cx="1.5" cy="1" rx="1.5" ry="1" stroke="none"/>
+      <ellipse cx="1.5" cy="1" rx="1" ry="0.5" fill="none"/>
+    </g>
+    <g id="Ellipse_20" data-name="Ellipse 20" transform="translate(-0.403 11.178)" fill="#1e1e1e" stroke="#1e1e1e" stroke-width="1">
+      <circle cx="1.5" cy="1.5" r="1.5" stroke="none"/>
+      <circle cx="1.5" cy="1.5" r="1" fill="none"/>
+    </g>
+    <g id="Ellipse_23" data-name="Ellipse 23" transform="translate(5.597 11.178)" fill="#1e1e1e" stroke="#1e1e1e" stroke-width="1">
+      <circle cx="1.5" cy="1.5" r="1.5" stroke="none"/>
+      <circle cx="1.5" cy="1.5" r="1" fill="none"/>
+    </g>
+    <g id="Ellipse_21" data-name="Ellipse 21" transform="translate(-0.403 17.178)" fill="#1e1e1e" stroke="#1e1e1e" stroke-width="1">
+      <circle cx="1.5" cy="1.5" r="1.5" stroke="none"/>
+      <circle cx="1.5" cy="1.5" r="1" fill="none"/>
+    </g>
+    <g id="Ellipse_22" data-name="Ellipse 22" transform="translate(5.597 17.178)" fill="#1e1e1e" stroke="#1e1e1e" stroke-width="1">
+      <circle cx="1.5" cy="1.5" r="1.5" stroke="none"/>
+      <circle cx="1.5" cy="1.5" r="1" fill="none"/>
+    </g>
+  </g>
+</svg>

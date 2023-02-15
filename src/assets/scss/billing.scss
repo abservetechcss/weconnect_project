@@ -1,0 +1,514 @@
+$fontN: "Nunito", sans-serif;
+
+.billing_section {
+  font-family: $fontN;
+  .billing_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #f3f4f7;
+    height: 80px;
+    padding: 0 43px;
+    .safe_text {
+      font-family: $fontN;
+      display: flex;
+      align-items: center;
+      p {
+        font-size: 12px;
+        margin-left: 11px !important;
+        line-height: 16px;
+        color: #8993b5;
+        font-weight: 700;
+      }
+    }
+  }
+  .billing_title {
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    font-weight: 700;
+  }
+  .billing_text {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: 400;
+    margin: 11px 0 46px 0 !important;
+    opacity: 0.5;
+  }
+  .billing_block {
+    padding: 32px 20px;
+    max-width: 817px;
+    margin: auto;
+
+
+
+
+.wrapper {
+  display: flex;
+  margin: 40px auto 0;
+  width: 80%;
+  max-width: 718px;
+}
+
+
+.wrapper form {
+  width: 100%;
+}
+
+label {
+  opacity: 0.6;
+  font-size: 14px;
+  padding-bottom: 7px;
+  display: block;
+}
+
+.mollie-component {
+  background: #f3f4f7;
+  padding: 10px;
+  border: 1px solid transparent;
+  transition: 0.15s border-color cubic-bezier(0.4, 0, 0.2, 1);
+  color: #fff;
+}
+
+.mollie-component.has-focus {
+  border-color: rgba(255,255,255,0.5);
+}
+
+.mollie-component.is-invalid {
+  border-color: rgba(255, 85, 85, 0.5);
+}
+
+.mollie-component.is-valid {
+  border-color: rgba(140, 252, 136, 0.5);
+}
+
+.field-error {
+  font-size: 12px;
+  margin-top: 2px;
+  color: #ff5555;
+  font-weight: 500;
+}
+
+
+
+.row {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.row:last-child {
+  margin-bottom: 0px;
+}
+
+.form-group:first-child {
+  margin-left: 0;
+}
+
+.form-group:last-child {
+  margin-right: 0;
+}
+
+.form-group {
+  width: 100%;
+  margin: 0 8px;
+  flex: 1 1 20%;
+}
+
+
+    .billing_card_box {
+      display: flex;
+      justify-content: space-between;
+      .billing_detail_box {
+        border: 1px solid #c6cad9;
+        border-radius: 10px;
+        padding: 28px 35px;
+        margin-right: 10px;
+        max-width: 509px;
+        width: 100%;
+        .detail_title {
+          font-size: 15px;
+          line-height: 20px;
+          font-weight: 700;
+          margin-bottom: 33px !important;
+        }
+        .card_inputs {
+          border-bottom: 1px solid #c6cad9;
+          padding-bottom: 30px;
+          .MuiGrid-root {
+            & > div {
+              width: 100%;
+            }
+          }
+          input {
+            border: 1px solid #c6cad9;
+            border-radius: 6px;
+            height: 39px;
+            width: 100%;
+            font-size: 12px;
+            padding: 0 14px;
+          }
+          #field-wrapper {
+            border: 1px solid #c6cad9;
+            border-radius: 6px;
+            height: 39px;
+            width: 100%;
+            font-size: 12px;
+            padding: 0 14px;
+            justify-content: space-between;
+            label {
+              margin-right: 20px;
+            }
+            input {
+              border: none;
+              padding: 0;
+            }
+          }
+          textarea {
+            border: 1px solid #c6cad9;
+            border-radius: 6px;
+            height: 87px;
+            width: 100%;
+            font-size: 12px;
+            padding: 10px 14px;
+          }
+          .form-floating {
+            select {
+              height: 39px;
+              font-size: 12px;
+              line-height: 16px;
+              border-radius: 6px;
+              &:focus {
+                outline: none;
+                box-shadow: none;
+                border: 1px solid #c6cad9;
+              }
+            }
+            label {
+              padding: 6px 13px;
+              font-size: 12px;
+            }
+          }
+          .form-floating > .form-select {
+            padding-top: 10px !important;
+            padding-bottom: 0px !important;
+            font-size: 12px;
+          }
+          .form-floating > .form-control:focus ~ label,
+          .form-floating > .form-control:not(:placeholder-shown) ~ label,
+          .form-floating > .form-select ~ label {
+            transform: scale(0.85) translateY(-0.3rem) translateX(0.15rem) !important;
+          }
+          .form-floating > .form-control:focus,
+          .form-floating > .form-control:not(:placeholder-shown) {
+            padding-top: 21px !important;
+            padding-bottom: 10px !important;
+          }
+        }
+        .total_price_box {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 30px !important;
+          .price_text {
+            font-size: 14px;
+            line-height: 19px;
+            font-weight: 700;
+            a {
+              font-size: 12px;
+              text-decoration: underline !important;
+              font-weight: 400;
+            }
+          }
+          .price_rate {
+            font-size: 17px;
+            line-height: 23px;
+            font-weight: 700;
+          }
+        }
+        .subscribe_btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          button {
+            margin: 31px 0 5px 0;
+            max-width: 219px;
+            width: 100%;
+            border-radius: 6px;
+            background-color: #32e0a1;
+            text-transform: none;
+            height: 40px;
+            font-size: 14px;
+            line-height: 19px;
+            font-weight: 700;
+            color: #1e1e1e;
+            box-shadow: none;
+          }
+          a {
+            font-size: 12px;
+            margin-top: 10px;
+          }
+        }
+      }
+      .billing_feature_box {
+        border-radius: 10px;
+        background-color: #f3f4f7;
+        padding: 28px 22px;
+        font-family: $fontN;
+        max-width: 263px;
+        width: 100%;
+        .choosen_text {
+          font-size: 15px;
+          line-height: 20px;
+          font-weight: 700;
+        }
+        .month_text {
+          font-size: 12px;
+          line-height: 27px;
+          margin: 33px 0 13px 0 !important;
+          font-weight: 400;
+        }
+        .startup_text {
+          font-size: 16px;
+          line-height: 22px;
+          font-weight: 700;
+          color: #1ab544;
+        }
+        .price_text {
+          font-size: 23px;
+          line-height: 31px;
+          margin: 9px 0 25px 0 !important;
+          font-weight: 700;
+          padding-bottom: 20px;
+          border-bottom: 1px solid #00000014;
+          span {
+            font-weight: 600;
+            opacity: 0.6;
+            font-size: 15px;
+          }
+        }
+        .billing_info {
+          & > div {
+            display: flex;
+            align-items: flex-start;
+          }
+          p {
+            font-size: 14px;
+            line-height: 19px;
+            font-weight: 600;
+            margin-bottom: 20px !important;
+          }
+          img {
+            margin: 4px 14px 0 0;
+          }
+        }
+        a {
+          font-size: 14px;
+          line-height: 19px;
+          font-weight: 600;
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .summary_block {
+    max-width: 894px;
+    width: 100%;
+    margin: auto;
+    padding: 32px 20px;
+    .billing_summary_block {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      @media (max-width: 800px) {
+        flex-direction: column;
+      }
+      .summary_detail_box {
+        max-width: 608px;
+        width: 100%;
+        margin-right: 20px;
+        @media (max-width: 800px) {
+          max-width: 100%;
+        }
+        .basic_info_box {
+          border: 1px solid #c6cad9;
+          border-radius: 10px;
+          padding: 16px 22px;
+          width: 100%;
+          margin-bottom: 26px;
+          display: flex;
+          justify-content: space-between;
+          .days_text {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 15px !important;
+            font-weight: 700;
+          }
+          .days_subtext {
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+          }
+          .choosen_box {
+            border-right: 1px solid #00000014;
+            width: 20%;
+            .choosen_text {
+              font-size: 14px;
+              line-height: 20px;
+              font-weight: 400;
+              opacity: 0.65;
+              max-width: 48px;
+              margin-bottom: 11px !important;
+            }
+            .change_text {
+              font-size: 13px;
+              line-height: 20px;
+              font-weight: 600;
+              color: #3080f5;
+            }
+          }
+          .choosen_basic_info {
+            width: 21%;
+          }
+          .shipping_box {
+            width: 80%;
+            margin-left: 30px;
+
+            .shipping_add_box {
+              .shipping_text {
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 700;
+                a {
+                  font-size: 13px;
+                  font-weight: 600;
+                  margin-left: 16px;
+                }
+              }
+              .address_text {
+                font-size: 16px;
+                line-height: 20px;
+                margin-top: 15px !important;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+      .summary_feature_box {
+        max-width: 263px;
+        width: 100%;
+        @media (max-width: 800px) {
+          max-width: 100%;
+        }
+        .coupon_info_box {
+          border: 1px solid #c6cad9;
+          border-radius: 10px;
+          padding: 16px 21px;
+          width: 100%;
+          margin-bottom: 26px;
+          .coupon_title {
+            font-size: 14px;
+            line-height: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #c6cad957;
+            margin-bottom: 20px !important;
+            font-weight: 700;
+          }
+          .coupon_input {
+            border: 1px solid #c6cad9;
+            border-radius: 6px;
+            display: flex;
+            width: 100%;
+            padding: 0 0 0 15px;
+            justify-content: space-between;
+            height: 40px;
+            input {
+              width: 70%;
+              border: none;
+              font-size: 12px;
+            }
+            button {
+              background-color: #10394b;
+              border-radius: 0 6px 6px 0;
+              color: #fff;
+              width: 30%;
+              font-size: 11px;
+              font-weight: 600;
+              line-height: 15px;
+              border: none;
+            }
+          }
+          .price_table_box {
+            border-bottom: 1px solid #c6cad957;
+            & > div {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-bottom: 15px;
+
+              .total_title {
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 400;
+              }
+              .total_text {
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 600;
+              }
+              .total_red_text {
+                color: #e34140;
+              }
+              .total_green_text {
+                color: #1ab544;
+              }
+            }
+          }
+          .summary_total_box {
+            border-bottom: 1px solid #c6cad957;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 0;
+            font-weight: 700;
+            .summary_title {
+              font-size: 14px;
+              line-height: 20px;
+            }
+            .summary_text {
+              font-size: 17px;
+              line-height: 23px;
+            }
+          }
+          .place_btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            button {
+              margin: 20px 0 5px 0;
+              width: 100%;
+              border-radius: 6px;
+              background-color: #32e0a1;
+              text-transform: none;
+              height: 40px;
+              font-size: 14px;
+              line-height: 19px;
+              font-weight: 700;
+              color: #1e1e1e;
+              box-shadow: none;
+            }
+            a {
+              font-size: 12px;
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

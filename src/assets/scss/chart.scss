@@ -1,0 +1,20 @@
+.dash_bar_chart {
+  text {
+    transform: translate(10px, 0px);
+    font-size: 11px !important;
+    font-family: Nunito !important;
+    color: #5f6367 !important;
+    tspan {
+      font-size: 11px !important;
+      font-family: Nunito !important;
+      color: #5f6367 !important;
+    }
+  }
+}
+
+text {
+  font-size: 11px !important;
+  font-family: Nunito !important;
+  color: #5f6367 !important;
+  text-transform: capitalize;
+}

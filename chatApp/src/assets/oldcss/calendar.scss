@@ -1,0 +1,101 @@
+.calendar_date_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  flex-direction: column;
+  font-size: 14px;
+  .react-calendar {
+    box-shadow: 0px 6px 25px #30385236;
+    border-radius: 10px;
+    width: 285px;
+    font-family: inherit;
+    padding: 5px;
+    button {
+      color: #000;
+      font-size: 12px;
+      font-family: inherit;
+      height: 37px;
+    }
+    .react-calendar__navigation {
+      button {
+        font-weight: 600;
+        font-size: 13px;
+      }
+    }
+    button.react-calendar__tile.react-calendar__tile--now.react-calendar__month-view__days__day {
+      background-color: #32e0a1;
+      border-radius: 50%;
+      color: #fff;
+    }
+    .react-calendar__month-view__weekdays__weekday {
+      color: #e5e5e5;
+      abbr {
+        text-decoration: none mpo !important;
+      }
+    }
+    .react-calendar__tile--active {
+      background-color: #0fca2d !important;
+      color: #fff;
+      border-radius: 50%;
+      max-width: 47px;
+      height: 37px;
+    }
+  }
+}
+
+.react-calendar__tile:disabled {
+  background-color: #fff;
+}
+.today {
+  background-color: #0fca2d;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.weconnect_offline_form_ip {
+  width: 100%;
+  & > div {
+    width: 100%;
+  }
+  .MuiInputBase-root.Mui-focused {
+    // padding: 10px;
+    // border: 1px solid #019f9c;
+    // box-shadow: none;
+  }
+  input {
+    height: 40px !important;
+    padding: 0 14px;
+    width: 100%;
+    font-size: 13px;
+    font-family: inherit;
+  }
+  fieldset {
+    border: 1px solid #019f9c;
+    border-radius: 6px;
+  }
+  legend {
+    display: none;
+  }
+  textarea {
+    padding: 0 !important;
+    font-size: 13px;
+    font-family: inherit;
+  }
+}
+.offline_form__FormGroup-weconnect__sc-164ir1g-1.jMxBZm {
+  width: 100%;
+  text-align: center;
+  button {
+    font-family: inherit;
+    background: #00424f;
+    border: none;
+    width: 130px;
+  }
+}
+.offline_form__FormContainer-weconnect__sc-164ir1g-2.fVYuVM {
+  padding: 20px 28px;
+  max-width: 250px;
+  width: 100%;
+  margin-left: 35px;
+}

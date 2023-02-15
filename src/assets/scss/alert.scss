@@ -1,0 +1,79 @@
+.incoming_alert {
+  .MuiAlert-message {
+    width: 100%;
+  }
+  small {
+    font-family: "nunito";
+  }
+  .alert_incoming_text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0.6;
+
+    h6 {
+      color: #ffffff;
+      font-family: "nunito";
+      font-size: 12px;
+      font-weight: 600;
+    }
+    small {
+      font-size: 10px;
+    }
+  }
+  .alert_subtitle {
+    color: #b8b9bc;
+    font-size: 10px;
+    opacity: 0.6;
+  }
+  .incoming_btn {
+    margin-top: 20px !important;
+    button {
+      border-radius: 6px;
+      height: 33px;
+      font-family: "nunito";
+      text-transform: capitalize;
+      color: #262838;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .ignore_btn {
+      background-color: #ff8b8b;
+      margin-right: 15px !important;
+    }
+    .respond_btn {
+      background-color: #32e0a1;
+    }
+  }
+}
+
+.terms_section {
+  font-family: "nunito";
+  .terms_bg {
+    background-color: #00434f;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .terms_inner {
+    padding: 50px 100px;
+  }
+  span {
+    display: block;
+    margin: 15px 0px !important;
+  }
+  .privacy_title {
+    font-weight: 800;
+    margin: 20px 0 !important;
+  }
+  ul,
+  ol {
+    li {
+      margin: 8px 0 !important;
+    }
+  }
+}

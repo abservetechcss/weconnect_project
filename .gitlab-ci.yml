@@ -1,0 +1,85 @@
+ 
+variables:
+  APP_VERSION: 0.1.0
+
+  ECR_REPO_URI: 112282000361.dkr.ecr.eu-central-1.amazonaws.com
+  DOCKER_TLS_CERTDIR: "/certs"
+  DOCKER_HOST: tcp://docker:2376
+  DOCKER_TLS_VERIFY: 1
+  DOCKER_CERT_PATH: "$DOCKER_TLS_CERTDIR/client"
+
+services:
+  - docker:19.03.12-dind
+
+stages:
+  - build
+  - deploy
+
+# Common Docker build
+.common-docker-build:
+  image: registry.gitlab.com/wedeploy1/weconnect:2.0.0
+  stage: build
+  variables:
+    ENV_NAME: dev
+    AWS_ACCESS_KEY_ID: $PROD_AWS_ACCESS_KEY_ID
+    AWS_SECRET_ACCESS_KEY: $PROD_AWS_SECRET_ACCESS_KEY
+  before_script:
+    - aws ecr get-login-password --region eu-central-1 | docker login --username AWS --password-stdin ${ECR_REPO_URI}
+    # - docker pull ${ECR_REPO_URI}/weconnect/manager:base-cache
+  when: manual
+
+# WeConnect Kaiwa UI Docker build
+.docker-build-kaiwa-ui:
+  extends: .common-docker-build
+  script:
+    # - docker build --cache-from ${ECR_REPO_URI}/weconnect/kaiwa-ui:dev-0.1.0-501536801 -t ${ECR_REPO_URI}/weconnect/kaiwa-ui:${ENV_NAME}-${APP_VERSION}-${CI_PIPELINE_ID} .
+    - echo "Using file .env.${ENV_NAME} for build"
+    - mv .env.${ENV_NAME} .env
+    - docker build -t ${ECR_REPO_URI}/weconnect/kaiwa-ui:${ENV_NAME}-${APP_VERSION}-${CI_PIPELINE_ID} .
+    - docker push ${ECR_REPO_URI}/weconnect/kaiwa-ui:${ENV_NAME}-${APP_VERSION}-${CI_PIPELINE_ID}
+
+dev-build-kaiwa-ui:
+  extends: .docker-build-kaiwa-ui
+  except:
+    - master
+    - preproduction
+
+prod-build-kaiwa-ui:
+  extends: .docker-build-kaiwa-ui
+  variables:
+    ENV_NAME: prod
+  only:
+    - master
+    - preproduction
+
+## Deploy - Common
+.common-deploy:
+  image: registry.gitlab.com/wedeploy1/weconnect:2.0.0
+  stage: deploy
+  variables:
+    ENV_NAME: dev
+    AWS_ACCESS_KEY_ID: $PROD_AWS_ACCESS_KEY_ID
+    AWS_SECRET_ACCESS_KEY: $PROD_AWS_SECRET_ACCESS_KEY
+  before_script:
+    - aws eks update-kubeconfig --name wc-eks
+  when: manual
+
+## Deploy - WeConnect Kaiwa UI App
+.common-kaiwa-ui-deploy:
+  extends: .common-deploy
+  script:
+    - helm upgrade -i wc-kaiwa-ui helm-chart -n weconnect-${ENV_NAME} -f helm-chart/values-${ENV_NAME}.yaml --set image.tag=${ENV_NAME}-${APP_VERSION}-${CI_PIPELINE_ID} --atomic
+
+dev-kaiwa-ui-deploy:
+  extends: .common-kaiwa-ui-deploy
+  except:
+    - master
+    - preproduction
+
+prod-kaiwa-ui-deploy:
+  extends: .common-kaiwa-ui-deploy
+  variables:
+    ENV_NAME: prod
+  only:
+    - master
+    - preproduction

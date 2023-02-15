@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+  <g id="crosshair" transform="translate(1.495 1.289)" opacity="0.6">
+    <circle id="Ellipse_433" data-name="Ellipse 433" cx="7.5" cy="7.5" r="7.5" transform="translate(-0.495 -0.289)" fill="none" stroke="#1e1e1e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line id="Line_1512" data-name="Line 1512" x1="3" transform="translate(11.505 6.711)" fill="none" stroke="#1e1e1e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line id="Line_1513" data-name="Line 1513" x1="3" transform="translate(-0.495 6.711)" fill="none" stroke="#1e1e1e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line id="Line_1514" data-name="Line 1514" y1="3" transform="translate(7.505 -0.289)" fill="none" stroke="#1e1e1e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line id="Line_1515" data-name="Line 1515" y1="3" transform="translate(7.505 11.711)" fill="none" stroke="#1e1e1e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

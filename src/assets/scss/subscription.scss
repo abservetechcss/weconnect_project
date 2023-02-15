@@ -1,0 +1,623 @@
+$fontN: "Nunito", sans-serif;
+
+.subscription_block {
+  background-color: #fff;
+  border-radius: 10px;
+
+  .invoice_tabpanel {
+    height: calc(100vh - 225px);
+
+    @media (max-width: 1024px) {
+      height: auto;
+    }
+  }
+
+  .subscription_tabs {
+    border-bottom: 4px solid #f2f3f5;
+
+    .MuiTabs-root {
+      min-height: 54px;
+    }
+  }
+
+  .tab_names {
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 700;
+    color: #1e1e1e;
+    font-family: $fontN;
+    opacity: 0.6;
+    text-transform: none;
+  }
+
+  .tab_names.Mui-selected {
+    color: #10394b;
+    opacity: 1;
+  }
+
+  span.MuiTabs-indicator {
+    background-color: #10394b;
+    height: 4px;
+  }
+
+  .your_plan_block {
+    text-align: center;
+
+    .choose_title {
+      font-size: 19px;
+      line-height: 26px;
+      font-family: $fontN;
+      font-weight: 700;
+      text-transform: capitalize;
+    }
+
+    .choose_text {
+      font-size: 14px;
+      line-height: 20px;
+      font-family: $fontN;
+      font-weight: 400;
+      margin: 12px 0 32px 0 !important;
+      opacity: 0.6;
+      text-transform: capitalize;
+    }
+
+    .month_toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .MuiFormGroup-root {
+        align-items: center;
+
+        p {
+          font-size: 15px;
+          line-height: 20px;
+          font-weight: 700;
+          color: #1b1c21;
+          font-family: $fontN;
+        }
+
+        span.MuiSwitch-root.MuiSwitch-sizeMedium {
+          margin: 0 15px;
+        }
+      }
+
+      .off_text {
+        background-color: #d8d9ff;
+        width: 70px;
+        height: 28px;
+        display: flex;
+        font-family: $fontN;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+        color: #0a10af;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 700;
+        margin-left: 10px;
+      }
+    }
+
+    .subscription_module {
+      padding: 0 89px;
+      margin-top: 34px;
+
+      @media (max-width: 1250px) {
+        padding: 0px;
+      }
+
+      .subscription_box {
+        border: 1px solid #c6cad9;
+        border-radius: 10px;
+        padding: 15px 22px;
+        text-align: left;
+        max-width: 263px;
+        width: 100%;
+        margin: auto;
+
+        .month_text {
+          font-size: 12px;
+          line-height: 27px;
+          font-weight: 700;
+          opacity: 0.6;
+          color: #1e1e1e;
+          height: 25px;
+        }
+
+        .startup_text {
+          font-size: 17px;
+          line-height: 23px;
+          font-weight: 700;
+          color: #1ab544;
+          margin: 5px 0 !important;
+        }
+
+        .business_text {
+          color: #0a0aaf;
+        }
+
+        .enterprise_text {
+          color: #1161d8;
+        }
+
+        .year_text {
+          font-size: 23px;
+          line-height: 31px;
+          font-weight: 700;
+          color: #1e1e1e;
+
+          span {
+            font-size: 15px;
+            opacity: 0.6;
+            line-height: 20px;
+          }
+        }
+
+        .subscription_info {
+          border-top: 1px solid #f2f3f5;
+          margin: 15px 0;
+          border-bottom: 1px solid #f2f3f5;
+          padding: 15px 0;
+
+          &>div {
+            display: flex;
+            align-items: flex-start;
+          }
+
+          .feature_link {
+            text-align: center;
+            font-size: 12px;
+            display: block;
+            line-height: 16px;
+            font-weight: 600;
+          }
+
+          p {
+            font-size: 14px;
+            line-height: 19px;
+            font-weight: 600;
+            margin-bottom: 20px !important;
+
+            svg {
+              font-size: 17px;
+            }
+          }
+
+          img {
+            margin: 4px 14px 0 0;
+          }
+        }
+
+        .feature_link {
+          text-align: center !important;
+          display: block;
+        }
+
+        .subscription_btn {
+          width: 100%;
+          border-radius: 6px;
+          background-color: #32e0a1;
+          text-transform: none;
+          height: 40px;
+          font-size: 14px;
+          line-height: 19px;
+          font-weight: 700;
+          color: #1e1e1e;
+          box-shadow: none;
+        }
+      }
+
+      .comparison_block {
+
+        // width: calc(100vw - 20px);
+        @media (max-width: 960px) {
+          width: calc(70vw - 25px);
+          overflow-x: auto;
+        }
+
+        .comparison_title {
+          font-size: 20px;
+          line-height: 27px;
+          font-weight: 700;
+          margin: 85px 0 43px 0 !important;
+          overflow-x: auto;
+          width: 100%;
+          text-transform: capitalize;
+          // @media (max-width: 960px) {
+          //   width: 100vw;
+          // }
+        }
+
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+          font-family: $fontN;
+
+          @media (max-width: 960px) {
+            width: calc(100vw + 120px);
+          }
+
+          td,
+          th {
+            text-align: left;
+            padding: 8px;
+          }
+
+          tr {
+            &:hover {
+              background-color: #f7f8fa;
+            }
+
+            &:nth-last-child(1) {
+              background-color: #fff;
+            }
+
+            &:first-child {
+              background-color: #fff;
+            }
+          }
+
+          td {
+            font-size: 14px;
+            line-height: 19px;
+            font-weight: 600;
+          }
+
+          tr {
+            th {
+              padding: 0;
+
+              .table_header {
+                width: 200px;
+                border-top: 1px solid #c6cad9;
+                border-radius: 10px 10px 0 0;
+                padding: 10px;
+                border-left: 1px solid #c6cad9;
+                margin-left: auto;
+                border-right: 1px solid #c6cad9;
+
+                @media (max-width: 1200px) {
+                  width: 190px;
+                }
+
+                &>div {
+                  border-bottom: 1px solid #c6cad961;
+                  padding: 0px 0 10px;
+                }
+
+                .month_text {
+                  font-size: 12px;
+                  line-height: 27px;
+                  font-weight: 700;
+                  opacity: 0.6;
+                  height: 20px;
+                  color: #1e1e1e;
+                }
+
+                .startup_text {
+                  font-size: 17px;
+                  line-height: 23px;
+                  font-weight: 700;
+                  color: #1ab544;
+                  margin: 5px 0 !important;
+                }
+
+                .business_text {
+                  color: #0a0aaf;
+                }
+
+                .enterprise_text {
+                  color: #1161d8;
+                }
+
+                .year_text {
+                  font-size: 23px;
+                  line-height: 31px;
+                  font-weight: 700;
+                  color: #1e1e1e;
+
+                  span {
+                    font-size: 15px;
+                    opacity: 0.6;
+                    line-height: 20px;
+                  }
+                }
+              }
+            }
+
+            .feature_title {
+              &>div {
+                border-bottom: 1px solid #1b1c21;
+                padding-bottom: 15px;
+                margin-top: 59px;
+              }
+            }
+
+            td {
+              padding: 0px;
+
+              &>div {
+                width: 200px;
+
+                @media (max-width: 1200px) {
+                  width: 190px;
+                }
+
+                text-align: center;
+                border-left: 1px solid #c6cad9;
+                padding: 10px;
+                height: 41px;
+                border-right: 1px solid #c6cad9;
+                margin-left: auto;
+
+                button {
+                  width: 100%;
+                  border-radius: 6px;
+                  background-color: #32e0a1;
+                  text-transform: none;
+                  height: 40px;
+                  font-size: 14px;
+                  line-height: 19px;
+                  font-weight: 700;
+                  color: #1e1e1e;
+                  box-shadow: none;
+                }
+              }
+
+              .choose_text_btn {
+                border-bottom: 1px solid #c6cad9;
+                border-radius: 0 0 10px 10px;
+                height: 90px;
+
+                &>div {
+                  border-top: 1px solid #c6cad961;
+                  padding: 20px 0 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.invoice_section {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  font-family: $fontN;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
+
+  .payment_history {
+    width: 35%;
+    height: 100%;
+    margin-right: 14px;
+    border: 1px solid #c6cad9;
+    border-radius: 10px;
+
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
+
+    .payment_header {
+      box-shadow: 0px 3px 15px #2a2e380f;
+      border-radius: 10px 10px 0px 0px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+
+      p {
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: 700;
+        text-transform: capitalize;
+      }
+    }
+
+    .nav-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+
+      .pay_history_tabs {
+        display: flex;
+        align-items: center;
+
+        .pay_history_box {
+          border-right: 1px solid #e4e8f2;
+          padding-right: 20px;
+          margin-right: 20px;
+
+          .pay_title {
+            font-size: 14px;
+            line-height: 19px;
+            color: #1e1e1e;
+            font-weight: 700;
+            margin-bottom: 3px !important;
+          }
+
+          .pay_text {
+            font-size: 14px;
+            line-height: 20px;
+            color: #1e1e1e;
+            font-weight: 400;
+            opacity: 0.7;
+          }
+        }
+
+        .invoice_no {
+          font-size: 12px;
+          line-height: 16px;
+          color: #1e1e1e;
+          font-weight: 600;
+
+          &:first-child {
+            margin-bottom: 3px !important;
+          }
+
+          span {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    .nav-pills .nav-link.active {
+      background-color: #eef5ff;
+      color: #1e1e1e;
+    }
+  }
+
+  .invoice_details {
+    width: 65%;
+    height: 100%;
+    border: 1px solid #c6cad9;
+    height: 100%;
+
+    @media (max-width: 1024px) {
+      width: 100%;
+      margin-top: 30px;
+    }
+
+    .tab-content {
+      height: 100%;
+      position: relative;
+    }
+
+    border-radius: 10px;
+
+    .invoice_header {
+      border-bottom: 1px solid #c6cad9;
+      border-radius: 10px 10px 0px 0px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+
+      .btn-outlineSecondary {
+        background-color: #fff;
+        border: 1px solid #10394b;
+        color: #10394b;
+
+        &:hover {
+          background-color: #6c757d;
+          color: #fff;
+          border: 1px solid #fff;
+
+          .visibility_icon {
+            color: #fff;
+          }
+        }
+
+        .visibility_icon {
+          width: 15px;
+          height: 15px;
+          color: #10394b;
+          margin-right: 10px;
+        }
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: 700;
+
+        svg {
+          font-size: 20px;
+          margin-right: 5px;
+        }
+
+        span {
+          font-weight: 400;
+        }
+      }
+    }
+
+    .billing_details {
+      padding: 20px;
+
+      .bill_title {
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: 700;
+        margin-bottom: 11px !important;
+        text-transform: capitalize;
+      }
+
+      .bill_text {
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: 400;
+      }
+
+      .date_text {
+        margin-bottom: 12px !important;
+      }
+    }
+
+    table {
+      font-family: $fontN;
+      border-collapse: collapse;
+      width: 100%;
+
+      th {
+        background-color: #f3f4f7;
+        font-size: 11px;
+        line-height: 19px;
+        font-weight: 700;
+      }
+
+      td {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+      }
+
+      .startup_text {
+        font-weight: 700;
+
+        span {
+          font-size: 12px;
+          font-weight: 400;
+        }
+      }
+
+      td,
+      th {
+        text-align: left;
+        padding: 8px;
+      }
+    }
+
+    .grand_total {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 44px;
+      background-color: #daf4dd;
+      border-radius: 0px 0px 10px 10px;
+      padding: 0 20px;
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+
+      p {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 700;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

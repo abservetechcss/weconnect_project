@@ -1,0 +1,214 @@
+[data-weconnect-simplebar] {
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .weconnect-simplebar-wrapper {
+    overflow: hidden;
+    width: inherit;
+    height: inherit;
+    max-width: inherit;
+    max-height: inherit;
+
+    /* height: calc(100vh - 160px)!important; */
+
+  }
+  
+  .weconnect-simplebar-mask {
+    direction: inherit;
+    position: absolute;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: auto !important;
+    height: auto !important;
+    z-index: 0;
+  }
+  
+  .weconnect-simplebar-offset {
+    direction: inherit !important;
+    box-sizing: inherit !important;
+    resize: none !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .weconnect-simplebar-content-wrapper {
+    direction: inherit;
+    box-sizing: border-box !important;
+    position: relative;
+    display: block;
+    height: 100%; /* Required for horizontal native scrollbar to not appear if parent is taller than natural height */
+    width: auto;
+    max-width: 100%; /* Not required for horizontal scroll to trigger */
+    max-height: 100%; /* Needed for vertical scroll to trigger */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .weconnect-simplebar-content-wrapper::-webkit-scrollbar,
+  .weconnect-simplebar-hide-scrollbar::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  
+  .weconnect-simplebar-content:before,
+  .weconnect-simplebar-content:after {
+    content: ' ';
+    display: table;
+  }
+  
+  .weconnect-simplebar-placeholder {
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    pointer-events: none;
+  }
+  
+  .weconnect-simplebar-height-auto-observer-wrapper {
+    box-sizing: inherit !important;
+    height: 100%;
+    width: 100%;
+    max-width: 1px;
+    position: relative;
+    float: left;
+    max-height: 1px;
+    overflow: hidden;
+    z-index: -1;
+    padding: 0;
+    margin: 0;
+    pointer-events: none;
+    flex-grow: inherit;
+    flex-shrink: 0;
+    flex-basis: 0;
+  }
+  
+  .weconnect-simplebar-height-auto-observer {
+    box-sizing: inherit;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1000%;
+    width: 1000%;
+    min-height: 1px;
+    min-width: 1px;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -1;
+  }
+  
+  .weconnect-simplebar-track {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  
+  [data-weconnect-simplebar].weconnect-simplebar-dragging .weconnect-simplebar-content {
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  [data-weconnect-simplebar].weconnect-simplebar-dragging .weconnect-simplebar-track {
+    pointer-events: all;
+  }
+  
+  .weconnect-simplebar-scrollbar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    min-height: 10px;
+  }
+  
+  .weconnect-simplebar-scrollbar:before {
+    position: absolute;
+    content: '';
+    background: black;
+    border-radius: 7px;
+    left: 2px;
+    right: 2px;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+  }
+  
+  .weconnect-simplebar-scrollbar.weconnect-simplebar-visible:before {
+    /* When hovered, remove all transitions from drag handle */
+    opacity: 0.5;
+    transition: opacity 0s linear;
+  }
+  
+  .weconnect-simplebar-track.weconnect-simplebar-vertical {
+    top: 0;
+    width: 11px;
+  }
+  
+  .weconnect-simplebar-track.weconnect-simplebar-vertical .weconnect-simplebar-scrollbar:before {
+    top: 2px;
+    bottom: 2px;
+  }
+  
+  .weconnect-simplebar-track.weconnect-simplebar-horizontal {
+    left: 0;
+    height: 11px;
+  }
+  
+  .weconnect-simplebar-track.weconnect-simplebar-horizontal .weconnect-simplebar-scrollbar:before {
+    height: 100%;
+    left: 2px;
+    right: 2px;
+  }
+  
+  .weconnect-simplebar-track.weconnect-simplebar-horizontal .weconnect-simplebar-scrollbar {
+    right: auto;
+    left: 0;
+    top: 2px;
+    height: 7px;
+    min-height: 0;
+    min-width: 10px;
+    width: auto;
+  }
+  
+  /* Rtl support */
+  [data-weconnect-simplebar-direction='rtl'] .weconnect-simplebar-track.weconnect-simplebar-vertical {
+    right: auto;
+    left: 0;
+  }
+  
+  .hs-dummy-scrollbar-size {
+    direction: rtl;
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    height: 500px;
+    width: 500px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+  
+  .weconnect-simplebar-hide-scrollbar {
+    position: fixed;
+    left: 0;
+    visibility: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }

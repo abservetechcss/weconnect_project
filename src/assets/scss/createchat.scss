@@ -1,0 +1,195 @@
+$fontN: "Nunito", sans-serif;
+.createchat_section {
+  padding: 72px 73px;
+  background-color: #fff;
+  border-radius: 10px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  @media (min-width: 1500px) {
+    height: calc(100vh - 120px);
+  }
+  .createchat_heading {
+    color: #1b1c21;
+    font-size: 19px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+  .createchat_title {
+    color: #1b1c21;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 400;
+    margin: 12px 0 26px 0 !important;
+    opacity: 0.5;
+    max-width: 425px;
+    width: 100%;
+  }
+  .chat_bot_select {
+    width: 100%;
+    margin-bottom: 25px;
+    div, span, p, label, input{
+      cursor: pointer;
+    }
+    @media (max-width: 1050px) {
+      max-width: 200px;
+    }
+    .MuiAutocomplete-root div:first-of-type:hover {
+      border-color: yellow;
+    }
+
+    label {
+      transform: translate(10px, 30%);
+      font-size: 12px;
+      line-height: 22px;
+    }
+    label.MuiFormLabel-filled {
+      transform: translate(14px, -9px) scale(0.75);
+    }
+    label.Mui-focused {
+      transform: translate(14px, -9px) scale(0.75);
+    }
+    .Mui-focused .MuiOutlinedInput-notchedOutline {
+      border: 1px solid #019f9c;
+      outline: none;
+    }
+    fieldset {
+      border: 1px solid #019f9c;
+      outline: none;
+    }
+
+    .MuiOutlinedInput-root {
+      height: 36px;
+      font-size: 12px;
+      padding: 0 15px 9px 15px;
+      input {
+        padding: 0;
+        height: 36px;
+        font-size: 12px;
+      }
+    }
+
+    .MuiAutocomplete-root.Mui-focused {
+      border: 1px solid #019f9c;
+    }
+    .MuiButtonBase-root.MuiAutocomplete-clearIndicator {
+      color: green;
+    }
+    .MuiInputLabel-root.Mui-focused {
+      color: #019f9c;
+    }
+    .MuiInputBase-root-MuiOutlinedInput-root.Mui-focused {
+      border-color: #019f9c;
+    }
+  }
+  .chat_input_box {
+    max-width: 554px;
+    width: 100%;
+    .language_selector {
+      height: 36px;
+      img {
+        margin-right: 5px;
+        width: 24px;
+        height: 13px;
+      }
+      .MuiOutlinedInput-root {
+        height: 36px;
+        width: 100%;
+        line-height: 1.5em;
+        & > div {
+          padding: 0 15px;
+          height: 36px;
+          font-size: 12px;
+        }
+        svg {
+          top: calc(50% - 0.7em);
+        }
+      }
+
+      fieldset {
+        border: 1px solid #989fba;
+        border-radius: 6px;
+        height: 36px;
+      }
+      legend {
+        display: none;
+      }
+    }
+    .login_label {
+      color: #9b9ca4;
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 400;
+      margin-bottom: 23px;
+      label {
+        padding: 10px 0.75rem;
+      }
+    }
+    .login_input {
+      height: 36px;
+      font-size: 12px;
+      border: 1px solid #989fba;
+      border-radius: 6px;
+      &:focus {
+        box-shadow: 0 0 5px #019f9c !important;
+      }
+    }
+    .form-floating > .form-control:focus ~ label {
+      color: #019f9c;
+    }
+    .form-floating > .form-control {
+      padding: 0.375rem 0.75rem 0;
+    }
+    .form-floating > .form-control:focus {
+      padding: 0.375rem 0.75rem 0;
+    }
+    .chat_btn_box {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-top: 22px;
+      .cancel_btn {
+        height: 32px;
+        border-radius: 6px;
+        margin-right: 14px;
+        font-size: 13px;
+        line-height: 14px;
+        color: #1e1e1e;
+        text-transform: none;
+        border: 1px solid #c6cad9;
+        font-weight: 700;
+        background-color: #fff !important;
+        box-shadow: none;
+        font-family: $fontN;
+      }
+      .create_btn {
+        height: 32px;
+        border-radius: 6px;
+        font-size: 13px;
+        line-height: 14px;
+        color: #1e1e1e;
+        text-transform: none;
+        font-weight: 700;
+        background-color: #32e0a1 !important;
+        box-shadow: none;
+        font-family: $fontN;
+      }
+    }
+  }
+  .chat_img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    @media (max-width: 1200px) {
+      margin-top: 30px;
+      max-width: 90%;
+      width: 100%;
+    }
+    img {
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+  }
+}

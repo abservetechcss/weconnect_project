@@ -1,0 +1,410 @@
+@import url(./login.scss);
+@import url(./dashboard.scss);
+@import url(./sidebar.scss);
+@import url(./live_conv.scss);
+@import url(./offlinemsg.scss);
+@import url(./userdash.scss);
+@import url(./createchat.scss);
+@import url(./chatbots.scss);
+@import url(./knowledge.scss);
+@import url(./overview.scss);
+@import url(./raibulive.scss);
+@import url(./refer.scss);
+@import url(./templates.scss);
+@import url(./builder_components.scss);
+@import url(./share_builder.scss);
+@import url(./edit-profile.scss);
+@import url(./chatbotsettings.scss);
+@import url(./settings.scss);
+@import url(./analytics.scss);
+@import url(./appointment.scss);
+@import url(./logical_jump.scss);
+@import url(./funnel.scss);
+@import url(./design.scss);
+@import url(./billing.scss);
+@import url(./subscription.scss);
+@import url(./header.scss);
+@import url(./performance.scss);
+@import url(./chart.scss);
+@import url(./flow.scss);
+@import url(./alert.scss);
+
+$fontN: "Nunito", sans-serif;
+$montserrat: "Montserrat", sans-serif;
+.green_btn {
+  background-color: #00434f !important;
+  border: 2px solid #00434f !important;
+  height: 36px !important;
+  border-radius: 6px !important;
+  width: 100% !important;
+  text-transform: none !important;
+  font-family: $fontN !important;
+  font-size: 12px !important;
+  line-height: 16px !important;
+  box-shadow: none !important;
+  font-weight: 700 !important;
+}
+.registration_btn {
+  margin-top: 20px !important;
+}
+.forgot_btn {
+  margin-top: 20px !important;
+}
+.preLoader img {
+  width: 80%;
+}
+.preLoader {
+  height: auto;
+  position: fixed;
+  width: 25%;
+  z-index: 999999;
+  left: 38%;
+  top: 20%;
+}
+input:focus {
+  outline: none;
+}
+select:focus {
+  outline: none;
+}
+.form-control:focus {
+  box-shadow: none !important;
+}
+.text-danger {
+  color: red !important;
+}
+
+.errorMsg {
+  color: red !important;
+  text-align: left;
+  font-size: 12px;
+  margin-top: 3px;
+  font-family: $fontN;
+}
+.alert {
+  padding: 5px 10px !important;
+}
+.alert-danger {
+  color: #842029 !important;
+  background-color: #f8d7da91 !important;
+  font-family: $fontN !important;
+  border: none !important;
+  border-radius: 6px !important;
+  margin-top: 10px !important;
+  font-weight: 600 !important;
+  max-width: 90%;
+  width: 100%;
+  margin: auto;
+}
+#page-wrap {
+  top: 0px;
+}
+
+.errorColor {
+  border-left: 4px solid red !important;
+}
+
+.successColor {
+  border-left: 4px solid green !important;
+}
+
+.strength {
+  padding: 0px !important;
+}
+
+.error_title {
+  font-size: 12px !important;
+  line-height: 16px !important;
+  color: red;
+  margin-top: 7px !important;
+  text-align: left;
+  display: flex;
+  img {
+    margin: 0 4px 4px 3px;
+  }
+}
+
+.submain_header {
+  width: calc(100% + 40px);
+  transform: translate(-20px, -19px);
+  height: 43px;
+  display: flex;
+  align-items: center;
+  padding: 0 11px;
+  background-color: #fff;
+}
+
+@import url(./modelPopup.scss);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+div::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  margin-bottom: 5px;
+}
+
+/* Track */
+div::-webkit-scrollbar-track {
+  box-shadow: none;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+/* Handle */
+div::-webkit-scrollbar-thumb {
+  background: #eaecf2;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+div::-webkit-scrollbar-thumb:hover {
+  background: #eaecf2;
+}
+
+.delete_popup {
+  .MuiPaper-root {
+    box-shadow: 0px 8px 26px #1b1c212e;
+    border-radius: 10px;
+    max-width: 478px;
+    padding-top: 10px;
+    width: 100%;
+  }
+  .MuiDialogContent-root {
+    p {
+      font-size: 16px;
+      font-family: $fontN;
+      color: #1b1c21;
+      font-weight: 700;
+      line-height: 22px;
+    }
+    .info_box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 25px;
+    }
+    .no_btn {
+      border-radius: 6px;
+      background-color: #ebf7f7;
+      color: #019f9c;
+      font-size: 15px;
+      box-shadow: none;
+      height: 29px;
+      min-width: 44px;
+      text-transform: none;
+      font-family: $fontN;
+      line-height: 20px;
+      margin-right: 10px;
+      font-weight: 700;
+    }
+    .yes_btn {
+      color: #7e7e7e;
+      font-size: 15px;
+      box-shadow: none;
+      height: 29px;
+      min-width: 44px;
+      text-transform: none;
+      font-family: $fontN;
+      line-height: 20px;
+      font-weight: 700;
+    }
+  }
+}
+
+.lead-sub-header-block {
+}
+
+tfoot {
+  tr,
+  th {
+    td {
+      div,
+      span,
+      p {
+        font: normal normal normal 12px/20px nunito !important;
+        letter-spacing: 0px;
+        color: #1b1c21 !important;
+        // opacity: 0.5;
+      }
+    }
+  }
+}
+
+.header-edit-options {
+  position: relative;
+  .delete-header-options-block {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    height: 47px;
+    z-index: 9999;
+    max-width: calc(100vw - 310px);
+    left: 50px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.right-emoji-show {
+  .rdw-editor-wrapper {
+    .rdw-editor-toolbar {
+      .rdw-image-wrapper {
+        .rdw-image-modal {
+          right: unset;
+          left: 30px;
+        }
+      }
+      .emoji-mart.emoji-mart-light {
+        left: 30px;
+      }
+    }
+    .giphy-picker {
+      left: 35px;
+    }
+  }
+}
+.react-flow__attribution a {
+  display: none;
+}
+.year {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow-y: scroll;
+}
+.month-name {
+  font-size: 13px;
+  line-height: 19px;
+  font-weight: 700;
+}
+span.day {
+  font-size: 13px;
+  line-height: 19px;
+  font-weight: 600;
+}
+button.date.next-month {
+  font-size: 12px;
+  line-height: 19px;
+  font-weight: 400;
+}
+button.date.prev-month {
+  font-size: 12px;
+  line-height: 19px;
+  font-weight: 400;
+}
+button.date.in-month {
+  font-size: 12px;
+  line-height: 19px;
+  font-weight: 400;
+}
+.today {
+  background: #daf4dd !important;
+}
+.month {
+  margin-bottom: 20px;
+}
+.date.in-month:hover {
+  background: #daf4dd !important;
+}
+.day {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.date {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+}
+
+.date.in-month:hover {
+  cursor: pointer;
+  background: #ccbe88;
+}
+
+.today {
+  background: #ccbe88;
+}
+
+.date.prev-month,
+.date.next-month {
+  color: grey;
+}
+
+@import url(./custome_field.scss);
+
+main.MuiBox-root {
+  min-height: calc(100vh);
+  // background-color: yellow;
+  div.content {
+    height: calc(100% - 64px);
+  }
+}
+.emoji-mart-anchors svg,
+.emoji-mart-anchors img {
+  fill: #0000007d !important;
+}
+
+.react-tel-input .form-control {
+  width: 100% !important;
+}
+.smooth-dnd-container.vertical > .smooth-dnd-draggable-wrapper {
+  overflow: initial !important;
+}
+
+#react-select-2-listbox {
+  transform: translate(0px, -347px);
+  height: 295px;
+  & > div {
+    height: 295px;
+  }
+}
+.MuiSnackbar-anchorOriginTopRight {
+  top: 5px !important;
+}
+
+svg{
+  cursor: pointer;
+}
+
+div[role="button"]{
+  cursor: pointer!important;
+}
+
+a{
+  div, span, p{
+    cursor: pointer;
+  }
+}
+
+
+// sp changes
+// .weconnect-simplebar-wrapper{
+//   height: calc(100vh - 160px);
+// }
+.testModeToggle {
+cursor: pointer;
+border: 1px solid #eee;
+padding: 6px 12px;
+border-radius: 100px;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+min-width: 135px;
+width: 135px;
+justify-content: space-between;
+align-items: center;
+color: #1e1e1e;
+font-size: 14px;
+line-height: 19px;
+font-weight: bold;
+font-family: nunito;
+margin-left: 15px;
+}

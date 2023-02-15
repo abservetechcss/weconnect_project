@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="53.25" height="16.265" viewBox="0 0 53.25 16.265">
+  <g id="Group_18867" data-name="Group 18867" transform="translate(1 0.489)">
+    <text id="Copy" transform="translate(23.25 11.511)" fill="#1e1e1e" font-size="12" font-family="NunitoSans-SemiBold, Nunito Sans" font-weight="600"><tspan x="0" y="0">Copy</tspan></text>
+    <g id="copy-2" data-name="copy" transform="translate(0 0.554)">
+      <rect id="Rectangle_222" data-name="Rectangle 222" width="9.247" height="9.244" rx="2" transform="translate(4.979 4.978)" fill="none" stroke="#35d188" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_21431" data-name="Path 21431" d="M4.134,11.244H3.423A1.422,1.422,0,0,1,2,9.822v-6.4A1.422,1.422,0,0,1,3.423,2h6.4a1.422,1.422,0,0,1,1.423,1.422v.711" transform="translate(-2 -2)" fill="none" stroke="#35d188" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

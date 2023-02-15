@@ -1,0 +1,12 @@
+## Stage 1 : Build the Application
+# get the base node image
+FROM node:12.22-bullseye as builder
+
+# set the working dir for container
+WORKDIR /frontend
+
+# copy the json file first
+COPY ./package.json /frontend
+
+# install npm dependencies
+RUN npm install

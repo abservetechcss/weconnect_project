@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <div id="weconnect_render"></div>
+  <script type="text/javascript">
+    console.log("document.referrer", document.referrer);
+    document.addEventListener("DOMContentLoaded", function (event) {
+      let params = new URL(document.location).searchParams;
+      let botId = params.get("botId");
+      WeConnect.render(document.getElementById("weconnect_render"), {
+        mode: "widget",
+        // mode: "landing",
+        // mode: "embed",
+        botId: botId,
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,417 @@
+$fontN: "Nunito", sans-serif;
+.basic-acc-block {
+  border: 1px solid #c6cad9;
+  border-radius: 6px;
+  max-width: 455px;
+  width: 100%;
+  margin-bottom: 21px;
+  padding: 14px;
+  .trackers_input {
+    border: 1px solid #c6cad9;
+    border-radius: 6px;
+    width: 100%;
+    height: 35px;
+    padding: 0 15px;
+    margin-top: 10px;
+    font-size: 12px;
+    &::placeholder {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+  .user_account_edit {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px !important;
+    position: relative;
+    .acc_img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      margin-right: 16px;
+    }
+    .edit_img {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background-color: #32e0a1;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      left: 50px;
+      bottom: 1px;
+      img {
+        width: 11px;
+      }
+    }
+    .user_name {
+      font-size: 13px;
+      line-height: 18px;
+      font-weight: 700;
+    }
+    .user_add {
+      font-size: 11px;
+      line-height: 14px;
+      font-weight: 400;
+      margin-top: 6.8px !important;
+      opacity: 0.6;
+    }
+  }
+  .password_edit_block {
+    position: relative;
+    img {
+      position: absolute;
+      right: 10px;
+      top: 14px;
+      width: 11.67px;
+    }
+  }
+  .time-zone-block.form-floating {
+    & > div {
+      & > div {
+        & > div {
+          padding-top: 0;
+          padding-bottom: 0;
+          margin-top: 0;
+          margin-bottom: 0;
+
+          &:first-child {
+            margin-top: 7px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  .language-selector {
+    span,
+    div,
+    input {
+      font-size: 12px;
+      line-height: 16px;
+      font-family: Nunito;
+    }
+    fieldset {
+      top: 0 !important;
+    }
+    legend {
+      display: none;
+    }
+    .MuiSelect-select.MuiSelect-outlined {
+      padding: 20px 12px 0 12px;
+    }
+  }
+  .custom-selector-block.form-floating {
+    div,
+    span,
+    p {
+      font-size: 12px;
+      font-family: Nunito;
+    }
+    legend {
+      display: none;
+    }
+    .MuiSelect-select.MuiSelect-outlined.MuiOutlinedInput-input {
+      padding: 7px;
+      font-size: 12px;
+    }
+  }
+
+  .form-floating {
+    input {
+      height: 35px;
+      font-size: 12px !important;
+      line-height: 16px;
+      &:focus {
+        outline: none;
+        // border: 1px solid #c6cad9;
+      }
+    }
+    textarea {
+      font-size: 12px;
+      line-height: 16px;
+      &:focus {
+        outline: none;
+        border: 1px solid #c6cad9;
+      }
+    }
+    select {
+      height: 35px;
+      font-size: 12px;
+      line-height: 16px;
+      &:focus {
+        outline: none;
+        box-shadow: none;
+        border: 1px solid #c6cad9;
+      }
+    }
+    label {
+      padding: 6px 13px;
+      font-size: 12px;
+    }
+  }
+  .form-floating > .form-select {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    font-size: 12px;
+  }
+  .form-floating > .form-control:focus ~ label,
+  .form-floating > .form-control:not(:placeholder-shown) ~ label,
+  .form-floating > .form-select ~ label {
+    transform: scale(0.85) translateY(-0.3rem) translateX(0.15rem) !important;
+  }
+  .form-floating > .form-control:focus,
+  .form-floating > .form-control:not(:placeholder-shown) {
+    padding-top: 21px;
+    padding-bottom: 10px;
+    cursor: auto;
+  }
+  .sync_title {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+  }
+  .sync_text {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 14px;
+    margin: 7px 0 !important;
+    opacity: 0.6;
+  }
+  .compliance_input {
+    display: grid;
+    label {
+      font-size: 12px;
+      line-height: 16px;
+      opacity: 0.6;
+      margin-bottom: 10px;
+    }
+    textarea {
+      border: 1px solid #c6cad9;
+      border-radius: 6px;
+      height: 87px;
+      cursor: auto;
+    }
+    .left_text {
+      font-size: 9px;
+      text-align: right;
+      margin: 5px 0 20px 0;
+    }
+  }
+  .edit-checkbox {
+    height: 32px;
+    span {
+      font-size: 12px;
+      line-height: 16px;
+      font-family: $fontN;
+      svg {
+        width: 20px;
+        color: #17bdba;
+      }
+    }
+  }
+  .starter_card_block {
+    margin-top: 15px !important;
+    .starter_inner_block {
+      border: 1px solid #10394b !important;
+      padding: 3px;
+      padding: 5px 15px 5px 15px;
+      margin-bottom: 15px !important;
+      max-width: unset;
+      width: auto;
+    }
+  }
+  .availability_box {
+    display: flex;
+    align-items: flex-start;
+    .avail_box {
+      width: 100%;
+    }
+    input {
+      margin: 2px 11px 0 0;
+    }
+    input[type="checkbox"] {
+      position: relative;
+      cursor: pointer !important;
+      height: 10px;
+      cursor: pointer;
+    }
+    .widget_animation {
+      margin-top: 20px !important;
+      & > div {
+        border: 1px solid #c6cad9;
+        border-radius: 6px;
+        padding: 7px;
+        display: inline-block;
+        margin-right: 20px !important;
+        text-align: center;
+        position: relative;
+      }
+    }
+    input[type="checkbox"]:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      top: 0;
+      left: 0;
+      background-color: #fff;
+      border: 2px solid #666666;
+      border-radius: 2px;
+    }
+    input[type="checkbox"]:checked:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      top: 0;
+      left: 0;
+      background-color: #4fccca;
+      border: 2px solid #4fccca;
+    }
+    input[type="checkbox"]:checked:after {
+      content: "";
+      display: block;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      position: absolute;
+      top: 1px;
+      left: 5px;
+    }
+    .availability_title {
+      font-size: 13px;
+      line-height: 18px;
+      font-weight: 700;
+      text-transform: capitalize;
+    }
+    .availability_text {
+      font-size: 11px;
+      opacity: 0.6;
+      line-height: 14px;
+      margin-top: 7px !important;
+      font-weight: 400;
+    }
+    .availability_time {
+      display: flex;
+      margin-top: 19px;
+      align-items: center;
+      justify-content: space-between;
+      .MuiFormControl-root {
+        height: 35px;
+        width: 45%;
+      }
+      .MuiOutlinedInput-root {
+        height: 35px;
+        font-size: 12px;
+      }
+      label {
+        margin: 0;
+        padding: 0;
+        top: -6px;
+        font-size: 11px;
+        opacity: 0.6;
+      }
+      label.Mui-focused {
+        color: #1e1e1e;
+        top: 3px !important;
+      }
+      label.MuiFormLabel-filled {
+        top: 3px !important;
+      }
+      fieldset {
+        border: 1px solid #c6cad9;
+        span {
+          width: auto;
+        }
+      }
+    }
+  }
+}
+.widget_setting_active {
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+
+  .edit_agents {
+    width: 100%;
+    position: relative;
+    input {
+      border: none;
+      font-size: 13px;
+      line-height: 18px;
+      font-weight: 700;
+      border-bottom: 1px solid #ced4da;
+      width: 100%;
+      margin-bottom: 10px !important;
+    }
+    button {
+      position: absolute;
+      right: -5px;
+      top: -11px;
+      color: #5ac593;
+      font-size: 27px;
+    }
+  }
+}
+.whatsapp_setting {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  .whatsapp_setting_inner {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px !important;
+  }
+}
+.upgrade_plan_block {
+  height: 52px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding: 0 17px;
+  p {
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 600;
+    span {
+      color: #00a29f;
+      font-weight: 700;
+    }
+  }
+  button {
+    text-transform: capitalize;
+    box-shadow: none;
+    font-size: 13px;
+    height: 35px;
+    font-family: $fontN;
+    line-height: 18px;
+    color: #fff;
+    border-radius: 6px;
+    font-weight: 700;
+    background-color: #10394b;
+    @media (max-width: 1208px) {
+      height: auto;
+      min-width: 115px;
+      display: block;
+    }
+  }
+}
+.time-zone-block {
+  div#react-select-4-placeholder {
+    font-size: 12px;
+    font-family: "nunito";
+  }
+}

@@ -1,0 +1,79 @@
+.disabled {
+  opacity: 0.5;
+}
+
+.file-upload {
+  display: block;
+  text-align: center;
+  font-family: inherit;
+  font-size: 12px;
+}
+.file-upload small {
+  text-align: left;
+  color: #1e1e1e;
+  opacity: 0.6;
+  font-weight: 600;
+  margin: 4px 0;
+  font-family: inherit;
+  display: block;
+}
+.file-upload .file-select {
+  border: 1px solid #00424f;
+  color: #111111;
+  cursor: pointer;
+  height: 30px;
+  line-height: 40px;
+  width: 120px;
+  text-align: left;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 7px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 22px;
+}
+
+.file-upload .file-select input[type="file"] {
+  z-index: 100;
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.file-upload .file-select .file-select-name {
+  line-height: 40px;
+  display: inline-block;
+  padding: 0 10px;
+  color: black;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: inherit;
+  overflow: hidden;
+  color: #00424f;
+  width: 75%;
+}
+.file-upload .file-select .file-select-name img {
+  width: 13px;
+  margin: 0px 7px -1px 0;
+}
+.file-upload .file-select .file-select-button {
+  padding: 0 10px;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.likely_text {
+  color: #1e1e1e;
+  opacity: 0.6;
+  font-size: 11px;
+  font-family: inherit;
+  font-weight: 600;
+}

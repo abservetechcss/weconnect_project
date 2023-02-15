@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="15" viewBox="0 0 12 15">
+  <g id="bar-chart-2" transform="translate(0.92 0.756)" opacity="0.6">
+    <line id="Line_1559" data-name="Line 1559" y1="8" transform="translate(10.08 5.244)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line id="Line_1560" data-name="Line 1560" y1="13" transform="translate(5.08 0.244)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line id="Line_1561" data-name="Line 1561" y1="5" transform="translate(0.08 8.244)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

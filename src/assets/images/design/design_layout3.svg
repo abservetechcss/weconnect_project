@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="220" height="144" viewBox="0 0 220 144">
+  <defs>
+    <filter id="Ellipse_410" x="0" y="104" width="40" height="40" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#333b55" flood-opacity="0.122"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_20343" data-name="Group 20343" transform="translate(2.206 0.311)">
+    <g id="Rectangle_10336" data-name="Rectangle 10336" transform="translate(-0.206 -0.311)" fill="#fff" stroke="#c6cad9" stroke-width="1" opacity="0.998">
+      <rect width="218" height="140" rx="6" stroke="none"/>
+      <rect x="0.5" y="0.5" width="217" height="139" rx="5.5" fill="none"/>
+    </g>
+    <path id="Rectangle_10347" data-name="Rectangle 10347" d="M6,0H212a6,6,0,0,1,6,6v9a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V6A6,6,0,0,1,6,0Z" transform="translate(-0.206 -0.311)" fill="#211d28"/>
+    <g id="Group_20233" data-name="Group 20233" transform="translate(8.535 4.978)">
+      <ellipse id="Ellipse_405" data-name="Ellipse 405" cx="2" cy="2.5" rx="2" ry="2.5" transform="translate(0.259 -0.289)" fill="#ff5e57"/>
+      <circle id="Ellipse_406" data-name="Ellipse 406" cx="2.5" cy="2.5" r="2.5" transform="translate(8.259 -0.289)" fill="#ffdf00"/>
+      <ellipse id="Ellipse_407" data-name="Ellipse 407" cx="2" cy="2.5" rx="2" ry="2.5" transform="translate(17.259 -0.289)" fill="#27c840"/>
+    </g>
+    <rect id="Rectangle_10340" data-name="Rectangle 10340" width="216" height="63" transform="translate(0.794 25.689)" fill="#edf2fd" opacity="0.35"/>
+    <rect id="Rectangle_10345" data-name="Rectangle 10345" width="137" height="8" rx="4" transform="translate(40.794 35.689)" fill="#edf2fd" opacity="0.7"/>
+    <rect id="Rectangle_10346" data-name="Rectangle 10346" width="107" height="8" rx="4" transform="translate(55.794 47.689)" fill="#edf2fd" opacity="0.7"/>
+    <rect id="Rectangle_10348" data-name="Rectangle 10348" width="38" height="3" rx="1.5" transform="translate(28.794 129.689)" fill="#edf2fd" opacity="0.7"/>
+    <rect id="Rectangle_10341" data-name="Rectangle 10341" width="38" height="3" rx="1.5" transform="translate(89.794 129.689)" fill="#edf2fd" opacity="0.7"/>
+    <rect id="Rectangle_10337" data-name="Rectangle 10337" width="38" height="3" rx="1.5" transform="translate(150.794 129.689)" fill="#edf2fd" opacity="0.7"/>
+    <rect id="Rectangle_10349" data-name="Rectangle 10349" width="26" height="3" rx="1.5" transform="translate(28.794 133.689)" fill="#edf2fd" opacity="0.7"/>
+    <rect id="Rectangle_10342" data-name="Rectangle 10342" width="26" height="3" rx="1.5" transform="translate(89.794 133.689)" fill="#edf2fd" opacity="0.7"/>
+    <rect id="Rectangle_10338" data-name="Rectangle 10338" width="26" height="3" rx="1.5" transform="translate(150.794 133.689)" fill="#edf2fd" opacity="0.7"/>
+    <rect id="Rectangle_10343" data-name="Rectangle 10343" width="38" height="12" rx="2" transform="translate(89.794 66.689)" fill="#edf2fd" opacity="0.7"/>
+    <rect id="Rectangle_10350" data-name="Rectangle 10350" width="38" height="27" rx="2" transform="translate(28.794 97.689)" fill="#edf2fd" opacity="0.7"/>
+    <rect id="Rectangle_10339" data-name="Rectangle 10339" width="38" height="27" rx="2" transform="translate(150.794 97.689)" fill="#edf2fd" opacity="0.7"/>
+    <rect id="Rectangle_10344" data-name="Rectangle 10344" width="38" height="27" rx="2" transform="translate(89.794 97.689)" fill="#edf2fd" opacity="0.7"/>
+    <g transform="matrix(1, 0, 0, 1, -2.21, -0.31)" filter="url(#Ellipse_410)">
+      <circle id="Ellipse_410-2" data-name="Ellipse 410" cx="11" cy="11" r="11" transform="translate(9 111)" fill="#53d89a"/>
+    </g>
+    <text id="_3" data-name="3" transform="translate(13.794 124.689)" fill="#1e1e1e" font-size="12" font-family="NunitoSans-Bold, Nunito Sans" font-weight="700"><tspan x="0" y="0">3</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WeConnect Widget</title>
+  <style>
+    #weconnect_render,
+    #weconnect_root,
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+  </style>
+  <script defer="defer" src="../muthu_webchat.js"></script>
+  <link href="../main.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="weconnect_render"></div>
+  <script>
+    console.log("document.referrer", document.referrer);
+    document.addEventListener("DOMContentLoaded", function (event) {
+      let params = new URL(document.location).searchParams;
+      let botId = params.get("botId");
+      WeConnect.render(document.getElementById("weconnect_render"), {
+        mode: "embed",
+        botId: botId,
+      });
+    });</script>
+</body>
+
+</html>

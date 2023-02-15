@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="220" height="143" viewBox="0 0 220 143">
+  <defs>
+    <filter id="Ellipse_409" x="180" y="104" width="40" height="39" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#333b55" flood-opacity="0.122"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_20341" data-name="Group 20341" transform="translate(0.471 -0.032)">
+    <g id="Rectangle_10311" data-name="Rectangle 10311" transform="translate(-0.471 0.032)" fill="#fff" stroke="#c6cad9" stroke-width="1">
+      <rect width="218" height="140" rx="6" stroke="none"/>
+      <rect x="0.5" y="0.5" width="217" height="139" rx="5.5" fill="none"/>
+    </g>
+    <path id="Rectangle_10312" data-name="Rectangle 10312" d="M6,0H212a6,6,0,0,1,6,6v8a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V6A6,6,0,0,1,6,0Z" transform="translate(-0.471 0.032)" fill="#211d28"/>
+    <g id="Group_20225" data-name="Group 20225" transform="translate(8.938 4.063)">
+      <ellipse id="Ellipse_405" data-name="Ellipse 405" cx="2" cy="2.5" rx="2" ry="2.5" transform="translate(-0.408 -0.032)" fill="#ff5e57"/>
+      <circle id="Ellipse_406" data-name="Ellipse 406" cx="2.5" cy="2.5" r="2.5" transform="translate(7.592 -0.032)" fill="#ffdf00"/>
+      <ellipse id="Ellipse_407" data-name="Ellipse 407" cx="2" cy="2.5" rx="2" ry="2.5" transform="translate(16.592 -0.032)" fill="#27c840"/>
+    </g>
+    <rect id="Rectangle_10326" data-name="Rectangle 10326" width="216" height="63" transform="translate(0.529 25.032)" fill="#edf2fd" opacity="0.35"/>
+    <rect id="Rectangle_9861" data-name="Rectangle 9861" width="137" height="7" rx="3.5" transform="translate(40.529 36.032)" fill="#edf2fd" opacity="0.7"/>
+    <rect id="Rectangle_10324" data-name="Rectangle 10324" width="107" height="8" rx="4" transform="translate(55.529 48.032)" fill="#edf2fd" opacity="0.7"/>
+    <rect id="Rectangle_10330" data-name="Rectangle 10330" width="38" height="3" rx="1.5" transform="translate(28.529 129.032)" fill="#edf2fd" opacity="0.7"/>
+    <rect id="Rectangle_10333" data-name="Rectangle 10333" width="38" height="3" rx="1.5" transform="translate(89.529 129.032)" fill="#edf2fd" opacity="0.7"/>
+    <rect id="Rectangle_10335" data-name="Rectangle 10335" width="38" height="3" rx="1.5" transform="translate(150.529 129.032)" fill="#edf2fd" opacity="0.7"/>
+    <rect id="Rectangle_10331" data-name="Rectangle 10331" width="26" height="3" rx="1.5" transform="translate(28.529 134.032)" fill="#edf2fd" opacity="0.7"/>
+    <rect id="Rectangle_10332" data-name="Rectangle 10332" width="26" height="3" rx="1.5" transform="translate(89.529 134.032)" fill="#edf2fd" opacity="0.7"/>
+    <rect id="Rectangle_10334" data-name="Rectangle 10334" width="26" height="3" rx="1.5" transform="translate(150.529 134.032)" fill="#edf2fd" opacity="0.7"/>
+    <rect id="Rectangle_10325" data-name="Rectangle 10325" width="38" height="11" rx="2" transform="translate(89.529 67.032)" fill="#edf2fd" opacity="0.7"/>
+    <rect id="Rectangle_10327" data-name="Rectangle 10327" width="38" height="28" rx="2" transform="translate(28.529 97.032)" fill="#edf2fd" opacity="0.7"/>
+    <rect id="Rectangle_10328" data-name="Rectangle 10328" width="38" height="28" rx="2" transform="translate(150.529 97.032)" fill="#edf2fd" opacity="0.7"/>
+    <rect id="Rectangle_10329" data-name="Rectangle 10329" width="38" height="28" rx="2" transform="translate(89.529 97.032)" fill="#edf2fd" opacity="0.7"/>
+    <g transform="matrix(1, 0, 0, 1, -0.47, 0.03)" filter="url(#Ellipse_409)">
+      <ellipse id="Ellipse_409-2" data-name="Ellipse 409" cx="11" cy="10.5" rx="11" ry="10.5" transform="translate(189 111)" fill="#53d89a"/>
+    </g>
+    <text id="_1" data-name="1" transform="translate(196.529 125.032)" fill="#1e1e1e" font-size="12" font-family="NunitoSans-Bold, Nunito Sans" font-weight="700"><tspan x="0" y="0">1</tspan></text>
+  </g>
+</svg>

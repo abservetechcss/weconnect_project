@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="9.5" height="10.5" viewBox="0 0 9.5 10.5">
+  <g id="calendar" transform="translate(0.279 0.818)">
+    <rect id="Rectangle_9270" data-name="Rectangle 9270" width="8" height="8" rx="2" transform="translate(0.471 0.932)" fill="none" stroke="#00434f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <line id="Line_283" data-name="Line 283" y2="1" transform="translate(6.471 -0.068)" fill="none" stroke="#00434f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <line id="Line_284" data-name="Line 284" y2="1" transform="translate(2.471 -0.068)" fill="none" stroke="#00434f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <line id="Line_285" data-name="Line 285" x2="8" transform="translate(0.471 3.932)" fill="none" stroke="#00434f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

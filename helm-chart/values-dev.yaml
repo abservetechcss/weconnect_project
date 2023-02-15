@@ -1,0 +1,16 @@
+ingress:
+  enabled: true
+  annotations:
+    kubernetes.io/ingress.class: alb
+    alb.ingress.kubernetes.io/group.order: '50'
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/target-type: ip
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:eu-central-1:112282000361:certificate/e0787a82-7776-4ead-bdd1-091f0c4243d7
+  hosts:
+    - host: kaiwa-ui.dev.weconnect.chat
+      paths:
+        - /*
+  tls: []
+  #  - secretName: chart-example-tls
+  #    hosts:
+  #      - chart-example.local

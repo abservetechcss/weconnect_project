@@ -1,0 +1,17 @@
+ingress:
+  enabled: true
+  annotations:
+    kubernetes.io/ingress.class: alb
+    alb.ingress.kubernetes.io/group.order: '20'
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/target-type: ip
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:eu-central-1:112282000361:certificate/302a19cf-5312-4c2c-a5cb-f0d581aa28f8
+  hosts:
+    - host: app.weconnect.chat
+      paths:
+        - /*
+
+  tls: []
+  #  - secretName: chart-example-tls
+  #    hosts:
+  #      - chart-example.local
